@@ -44,20 +44,14 @@ body {
     max-width: 100%;
     line-height: 3px;
     color: white;
-    margin-bottom: 1px;
-    padding-bottom: 1px;
+    padding: 0;
+    margin: 0;
     
     color: black;
 }
-img {
-
-    float: right;
-    width: 35%;
-    height: auto;
-    transform: scale(.8);
-}
 article {
   align-self: center;
+  
 }
 p {
     line-height: 20px;
@@ -65,7 +59,7 @@ p {
     margin: 0px 50px 50px 10px;
     padding: 20px;
     margin-top: 5px;
-
+    width: 90%;
 }
 
 h2 {
@@ -78,12 +72,16 @@ h2 {
     margin-right: 5px;
     font-size: 20px;
     padding-top: 7px;
- 
    
 }
+img {
+    width: 30%;
+    float: right;
+}
  article p {
-    width: 60%;
+    width: 90%;
     padding-left: 10px;
+    animation: none;
     
 }
 
@@ -150,6 +148,10 @@ p {
     body {
         font-family: 'Arial', sans-serif;
         font-weight: normal;
+        margin-left: 8px; 
+        margin-right: 5px;
+        width: 100%;
+        text-align: center; 
     }
     .nav a {
         text-align: center;
@@ -242,22 +244,14 @@ a {
     color: rgba(21, 125, 143, 0.705);
 }
 
-footer {
-    animation: audio 5s;
-    text-align: center;
-    font-size: .05px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin-top: 30px;
-    margin-bottom: -50px;
-    background-color: rgba(0, 0, 0, .7);
-    padding: -15px;
-    padding-bottom: -10px;
-    margin: 0;
-    color: white;
-    line-height: 30px;
-    background-size: cover;
-}
 footer p {
-    padding-bottom: -100px;
-
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    padding-top: 20px; 
+    color: wheat;
+    background-color: black;
+    animation: none;
+    width: 100%;
+    margin-left: 0; 
 }

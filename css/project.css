@@ -1,12 +1,16 @@
 @keyframes head {
     0% {
         background-image: url(../img/Green-Printed-Circuit-Board-1.jpg);
+        background-size: cover;
+        background-position: top;
     }
     50% {
         background-image: url(../img/1.jpg);
+        background-size: cover;
     }
     100% {   
         background-image: url(../img/Tech-02-Blue-Circuit.jpg);
+        
     }
     
 }
@@ -36,10 +40,17 @@
 }
 * {
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .head h1 {
     animation: header 2s;
+    letter-spacing: .5rem;
+    font-size: 5rem;
+    font-weight: 200;
+}
+.head p {
+    letter-spacing: .5rem;
 }
 
 
@@ -50,37 +61,31 @@ body {
     margin: 0;
     box-sizing: border-box;
     color: black;
-  
+    padding: 1rem 1rem 0 1rem;
+
 }
-article {
-  align-self: center;
-  
+main {
+    background-color: rgba(250, 242, 242, 0.63);
+    padding: 2rem;
 }
+
 p {
     line-height: 20px;
     text-indent: 20px;
-    margin: 0px 50px 50px 10px;
-    padding: 20px;
-    margin-top: 5px;
-    width: 90%;
+ 
+
 }
 
 h2 {
     display: inline-block;
     line-height: 20px;
     text-align: center;
-    padding: 10px;
-    padding-bottom: 0px;
-    margin-bottom: 0px;
     margin-right: 5px;
     font-size: 20px;
-    padding-top: 7px;
+   
    
 }
-img {
-    width: 30%;
-    float: right;
-}
+
  article p {
     width: 90%;
     padding-left: 10px;
@@ -88,19 +93,6 @@ img {
     
 }
 
-.group:before,
-.group:after {
-	content: "";
-	display: table;
-}
-
-.group:after {
-	clear: both;
-}
-
-.group {
-	zoom: 1;
-}
 
 .head {
     animation: head 5s 3s alternate infinite ease-in-out;
@@ -120,9 +112,11 @@ img {
     display: block;
     box-sizing: border-box;
     padding: 50px;
-    clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
     margin: 40px;
     height: 85vh;
+    border-radius: 10rem;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
 }
 p {
     animation: header2 2s alternate;
@@ -234,10 +228,7 @@ p {
     padding-top: 20px;
     line-height: 20px;
 }
-.lp {
-    margin: 5px;
-    padding: 5px;
-}
+
 
 .sub li {
     margin: 20px;
@@ -254,11 +245,60 @@ a {
 footer p {
     margin: 0;
     padding: 0;
-    text-align: center;
-    padding-top: 20px; 
-    color: wheat;
-    background-color: black;
+    text-align: center; 
+    color: rgba(182, 175, 175, 0.199);
+    background-color: rgb(75, 73, 73);
     animation: none;
     width: 100%;
     margin-left: 0; 
+    font-size: .8rem;
+}
+.site-owner {
+    padding: 4rem;
+    position: relative;
+    border-bottom: 3px solid white;
+}
+.designer {
+    padding: 4rem;
+    position: relative;
+    border-bottom: 3px solid white;
+}
+.owner {
+    width: 30%;
+    height: 30%;
+    float: right;
+    z-index: 100;
+}
+
+.paragraph-1 {
+    font-size: 1rem;
+    color: #777;
+    width: 60%;
+    float: left;
+    border-right: 3px solid white;
+    padding-right: 1rem;
+}
+h4 {
+    color: rgb(20, 20, 116);
+    padding: 1rem;
+    text-shadow: 0 1rem 1rem rgb(13, 13, 110);
+    font-size: 2rem;
+}
+.ashraf {
+    width: 30%;
+    height: 30%;
+    float: left;
+   
+}
+
+.paragraph-2 {
+    font-size: 1rem;
+    color: #777;
+    width: 60%;
+    float: right;
+    border-left: 3px solid white;
+    padding-left: 1rem;
+}
+.fix {
+    clear: both;
 }
